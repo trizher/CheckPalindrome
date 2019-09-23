@@ -41,7 +41,7 @@ public class CheckPalindromeApp extends Application {
 	}
 
 	private void onComprobarButtonAction(ActionEvent e) {
-		String texto = palindromoText.getText();
+		String texto = palindromoText.getText().replace(" ", "");
 		String palindromo = "";
 	    for (int x = texto.length() - 1; x >= 0 ; x--){
 	        palindromo += texto.charAt(x);
